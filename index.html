@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ScamShield - Link & SMS Scam Detector</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🛡️ ScamShield</h1>
+    <p>Paste a link or SMS message below to check for scam warning signs</p>
+  </header>
+
+  <main>
+    <div class="input-card">
+      <label for="userInput">Link or SMS text</label>
+      <textarea id="userInput" rows="5" placeholder="e.g. Congratulations! You won a prize, click http://bit.ly/xyz to claim now!"></textarea>
+      <button id="checkBtn">Check for Scam</button>
+    </div>
+
+    <div id="resultCard" class="result-card hidden">
+      <h2 id="verdict"></h2>
+      <div id="scoreBar" class="score-bar">
+        <div id="scoreFill" class="score-fill"></div>
+      </div>
+      <ul id="reasonsList"></ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>⚠️ This is a heuristic educational tool, not a guarantee. Always verify with official sources.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
